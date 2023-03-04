@@ -1,0 +1,79 @@
+
+
+
+body{
+    background-color: grey;
+
+    h1{
+      
+        color: white;
+        border-bottom: 3px solid bisque;
+    }
+
+
+
+    .card{
+       background-color: bisque;
+
+        .card-header{
+            h4{
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+           
+        }
+        .counter{
+            width: 60%;
+            height: 150px;
+            margin: 0 auto;
+            position: relative;
+            background-color: blue;
+            color: white;
+            border-radius: 0.5rem;
+            position: relative;
+          
+            h3{
+              font-size: 7rem;
+              position: absolute;
+              top:0;
+              left:0;
+              bottom: 0;
+              right: 0;
+            }
+          }
+    
+          .score-btn{
+            font-size: 1.5rem;
+            background-color: #000000;
+            color: white;
+            width: 85px;
+            border-radius: 0.5rem;
+          }
+
+          .score-btn:hover{
+           
+            background-color: bisque;
+            color: blue;
+          
+          }
+    }
+
+    .main-btn{
+        font-size: 1.2rem;
+            background-color: #000000;
+            color: white;
+            width: 150px;
+            border-radius: 0.5rem;
+
+    }
+
+    .main-btn:hover{
+        background-color: bisque;
+        color: blue;
+    }
+
+}
+
+
+
+

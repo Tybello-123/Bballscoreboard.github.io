@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Basketball ScoreBoard</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <h1 class="text-center mt-5 mb-2 mt-md-5 mb-md-3">Basketball ScoreBoard🏀🏀</h1>
+        <div class="col-md text-center">
+            <div class="card text-center my-md-2 m-5 p-2 ">
+                <div class="card-header">
+                    <h4 class="card-title text-center">Home🏠🏠</h4>
+                </div>
+                <div class="card-body">
+                    <div id="counter" class="counter my-3">
+                        <h3 id="h-count" class="text-center">0</h3></div>
+                    <button id="add-one" class="score-btn m-2" onclick="addOne()">+1</button>
+                    <button id="add-two" class="score-btn m-2" onclick="addTwo()">+2</button>
+                    <button id="add-three" class="score-btn m-2" onclick="addThree()">+3</button>
+                </div>
+        </div>
+     
+       </div>
+
+       <div class="col-md text-center">
+        <div class="card text-center my-md-2 m-5 p-2">
+            <div class="card-header">
+                <h4 class="card-title text-center">Guest😎😎</h4>
+            </div>
+            <div class="card-body">
+                <div id="counter" class="counter my-3">
+                    <h3 id="g-count" class="text-center">0</h3></div>
+                <button id="add-one" class="score-btn m-2" onclick="addOne()">+1</button>
+                <button id="add-two" class="score-btn m-2">+2</button>
+                <button id="add-three" class="score-btn m-2">+3</button>
+            </div>
+    </div>
+ 
+   </div>
+</div>
+<div class="row">
+    <div class="col text-center"><button id="new-game" class="main-btn my-3 p-2 text-center">New Game</button></div>
+    <div class="col text-center">  <button id="new-game" class="main-btn my-3 p-2 text-center">End Game</button></div>
+</div>
+
+    
+    <script src="/basketball-score-board/script.js"></script>
+</body>
+</html>
