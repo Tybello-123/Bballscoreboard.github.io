@@ -14,7 +14,7 @@
 
 <div class="container">
     <div class="row">
-        <h1 class="text-center mt-5 mb-2 mt-md-5 mb-md-3">Basketball ScoreBoard🏀🏀</h1>
+        <h1 id='d-heading'class="text-center mt-5 mb-2 mt-md-5 mb-md-3">Basketball ScoreBoard🏀🏀</h1>
         <div class="col-md text-center">
             <div class="card text-center my-md-2 m-5 p-2 ">
                 <div class="card-header">
@@ -26,6 +26,7 @@
                     <button id="add-one" class="score-btn m-2" onclick="addOne()">+1</button>
                     <button id="add-two" class="score-btn m-2" onclick="addTwo()">+2</button>
                     <button id="add-three" class="score-btn m-2" onclick="addThree()">+3</button>
+                    <p id="save-home" class="card-text" onclick="homeCount">Home Score: </p>
                 </div>
         </div>
      
@@ -39,18 +40,26 @@
             <div class="card-body">
                 <div id="counter" class="counter my-3">
                     <h3 id="g-count" class="text-center">0</h3></div>
-                <button id="add-one" class="score-btn m-2" onclick="addOne()">+1</button>
-                <button id="add-two" class="score-btn m-2">+2</button>
-                <button id="add-three" class="score-btn m-2">+3</button>
+                <button id="g-add-one" class="score-btn m-2" onclick="addOneGuest()">+1</button>
+                <button id="g-add-two" class="score-btn m-2" onclick="addTwoGuest()">+2</button>
+                <button id="g-add-three" class="score-btn m-2" onclick="addThreeGuest()">+3</button>
+                <p id="save-guest"  class="card-text" onclick="guestCount">Guest Score: </p>
             </div>
     </div>
  
    </div>
 </div>
-<div class="row">
-    <div class="col text-center"><button id="new-game" class="main-btn my-3 p-2 text-center">New Game</button></div>
-    <div class="col text-center">  <button id="new-game" class="main-btn my-3 p-2 text-center">End Game</button></div>
+<div class="row justify-content-between">
+  
+    <div class="col text-center"><button id="save-game" class="main-btn my-5 p-2 text-center" onclick="saveGame()">Save Game</button></div>
+    <div class="col text-center"><button id="end-game" class="main-btn my-5 p-2 text-center" onclick="endGame()">End Game</button></div>
+    <div class="col text-center"><button id="new-game" class="main-btn my-5 p-2 text-center" onclick="newGame()">New Game</button></div>
 </div>
+
+<!-- <div class="row">
+    <div class="record hs-chart"></div>
+    <div class="record gs-chart"></div>
+</div> -->
 
     
     <script src="/basketball-score-board/script.js"></script>

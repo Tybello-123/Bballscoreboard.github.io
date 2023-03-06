@@ -30,8 +30,8 @@ body{
             background-color: blue;
             color: white;
             border-radius: 0.5rem;
-            position: relative;
-          
+            
+       
             h3{
               font-size: 7rem;
               position: absolute;
@@ -56,6 +56,10 @@ body{
             color: blue;
           
           }
+
+          p{
+            font-size: 1.5rem;
+          }
     }
 
     .main-btn{
@@ -70,6 +74,14 @@ body{
     .main-btn:hover{
         background-color: bisque;
         color: blue;
+    }
+
+    .record{
+      width: 200px;
+      height: 50px;
+      margin: 0 auto;
+      background-color: bisque;
+      color: black;
     }
 
 }
