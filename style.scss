@@ -1,19 +1,27 @@
+$base-color: #090030;
+$card-color: #0C3C78;
+$btn-color: wheat;
+$btn-hover: #FF5200;
+$counter-color: #04879C;
+$btn-loose: #DC0000;
+$btn-win: #367E18;
 
 
 
 body{
-    background-color: grey;
+
+    background-color: $base-color;
 
     h1{
       
         color: white;
-        border-bottom: 3px solid bisque;
+        border-bottom: 3px solid $card-color;
     }
 
 
 
     .card{
-       background-color: bisque;
+       background-color: $card-color;
 
         .card-header{
             h4{
@@ -27,9 +35,10 @@ body{
             height: 150px;
             margin: 0 auto;
             position: relative;
-            background-color: blue;
+            background-color: $counter-color;
             color: white;
             border-radius: 0.5rem;
+          
             
        
             h3{
@@ -44,16 +53,18 @@ body{
     
           .score-btn{
             font-size: 1.5rem;
-            background-color: #000000;
-            color: white;
+            background-color: $btn-color;
+            color: black;
             width: 85px;
             border-radius: 0.5rem;
+            border: 1px solid black;
+           
           }
 
           .score-btn:hover{
            
-            background-color: bisque;
-            color: blue;
+            background-color: $btn-hover;
+            color: white;
           
           }
 
@@ -64,27 +75,32 @@ body{
 
     .main-btn{
         font-size: 1.2rem;
-            background-color: #000000;
-            color: white;
-            width: 150px;
+            background-color: $btn-color;
+            color: black;
+            // width: 150px;
             border-radius: 0.5rem;
+            border: none;
+            font-weight: bold;
 
     }
 
     .main-btn:hover{
-        background-color: bisque;
-        color: blue;
+        background-color: $btn-hover;
+        color: white;
     }
 
-    .record{
-      width: 200px;
-      height: 50px;
-      margin: 0 auto;
-      background-color: bisque;
-      color: black;
-    }
+    // .record{
+    //   width: 200px;
+    //   height: 50px;
+    //   margin: 0 auto;
+    //   background-color: $btn-color;
+    //   color: black;
+      
+    // }
 
 }
+
+
 
 
 

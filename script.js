@@ -65,20 +65,20 @@ let displayHeading = document.getElementById('d-heading')
 
 const endGame = () => {
     if (homeCount > guestCount) {
-        homeCounter.style.backgroundColor = 'green'; 
-        guestCounter.style.backgroundColor = 'red'; 
+        homeCounter.style.backgroundColor = '#367E18'; 
+        guestCounter.style.backgroundColor = '#DC0000'; 
         displayHeading.textContent += " : Home Wins"
 
     } else if(homeCount < guestCount) {
 
-        homeCounter.style.backgroundColor = 'red'; 
-        guestCounter.style.backgroundColor = 'green'; 
+        homeCounter.style.backgroundColor = '#DC0000'; 
+        guestCounter.style.backgroundColor = '#367E18'; 
         displayHeading.textContent += " : Guest Wins";
 
     }else{
         homeCounter.style.backgroundColor = 'red'; 
         guestCounter.style.backgroundColor = 'red'; 
-        displayHeading.textContent += " : It's A tie";
+        displayHeading.textContent += " : It's A Tie";
     }
 }
 
@@ -109,8 +109,15 @@ const newGame = () => {
     getGuestCount.textContent = "";
 
     displayHeading.textContent = "Basketball ScoreBoard🏀🏀";
-    homeCounter.style.backgroundColor = 'blue'; 
-    guestCounter.style.backgroundColor = 'blue'; 
+    homeCounter.style.backgroundColor = '#04879C'; 
+    guestCounter.style.backgroundColor = '#04879C';
+
+    guestCount = 0;
+    homeCount = 0;
+    
+    getHomeCount.textContent = "";
+  
+    getGuestCount.textContent = "";
     
 }
 

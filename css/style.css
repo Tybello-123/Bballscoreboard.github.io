@@ -1,10 +1,58 @@
-.counter {
-  width: 60%;
-  height: 50px;
-
+body {
+  background-color: #090030;
 }
-
-h1 {
-  background-color: 0;
-  color: red;
+body h1 {
+  color: white;
+  border-bottom: 3px solid #0C3C78;
+}
+body .card {
+  background-color: #0C3C78;
+}
+body .card .card-header h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+body .card .counter {
+  width: 60%;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #04879C;
+  color: white;
+  border-radius: 0.5rem;
+}
+body .card .counter h3 {
+  font-size: 7rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+body .card .score-btn {
+  font-size: 1.5rem;
+  background-color: wheat;
+  color: black;
+  width: 85px;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+body .card .score-btn:hover {
+  background-color: #FF5200;
+  color: white;
+}
+body .card p {
+  font-size: 1.5rem;
+}
+body .main-btn {
+  font-size: 1.2rem;
+  background-color: wheat;
+  color: black;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: bold;
+}
+body .main-btn:hover {
+  background-color: #FF5200;
+  color: white;
 }
